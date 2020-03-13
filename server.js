@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const port = process.env.PORT ? process.env.PORT : 3000
 const { getGlobal, getByCountry } = require("./utils/api");
 const { extractValue } = require("./utils/extractor");
 
@@ -59,6 +60,6 @@ app.get("/api/broadcast", async (req, res) => {
   }
 });
 
-const listener = app.listen(process.env.PORT, () => {
+const listener = app.listen(port, () => {
   console.log("App is listening on port " + listener.address().port);
 });

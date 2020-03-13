@@ -1,35 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Covid19 - Updates</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/style.css" rel="stylesheet" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  </head>
 
-  <body>
-    <div class="container">
-      <div id="">
-        
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Covid19 - Updates</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="/style.css" rel="stylesheet" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="row" style="margin-bottom: 15px;">
+        <h2>Global</h2>
       </div>
 
-      <div class="footer">
-        <a
-          href="https://github.com/azkihidayatulloh/covid19-updates"
-          target="__blank"
-          >Source</a
-        >
-        <a href="https://github.com/mathdroid/covid19" target="__blank"
-          >Reference</a
-        >
+      <div class="row" style="margin-bottom: 30px;">
+        <div class="col card bg-yellow">
+          <h3>Confirmed</h2>
+            <p id="globalConfirmed">Total</p>
+        </div>
+
+        <div class="col card bg-green">
+          <h3>Recovered</h2>
+            <p id="globalRecovered">Total</p>
+        </div>
+
+        <div class="col card bg-red">
+          <h3>Deaths</h2>
+            <p id="globalDeaths">Total</p>
+        </div>
       </div>
+
+      <div class="row" style="margin-bottom: 15px;">
+        <h2 id="localTitle">Local</h2>
+      </div>
+
+      <div class="row">
+        <div class="col card bg-yellow">
+          <h3>Confirmed</h2>
+            <p id="localConfirmed">Total</p>
+        </div>
+
+        <div class="col card bg-green">
+          <h3>Recovered</h2>
+            <p id="localRecovered">Total</p>
+        </div>
+
+        <div class="col card bg-red">
+          <h3>Deaths</h2>
+            <p id="localDeaths">Total</p>
+        </div>
+      </div>
+
+
     </div>
 
-    <script src="/script.js"></script>
-  </body>
+    <div class="footer">
+      <a href="https://github.com/azkihidayatulloh/covid19-updates" target="__blank">Source</a>
+      <a href="https://github.com/mathdroid/covid19" target="__blank">Reference</a>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+
 </html>

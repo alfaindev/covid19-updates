@@ -8,8 +8,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
+  height: 100vh;
 }
 
 a {
@@ -24,6 +24,66 @@ a:hover {
   color: black;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+  background-color: #bababa;
+  color: #ffffff;
+}
+
+.bg-red {
+  background-color: #cf5c60;
+}
+
+.bg-green {
+  background-color: #48bb78;
+}
+
+.bg-yellow {
+  background-color: #fbd38d;
+}
+
 .footer {
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 100%;
+  }
+  .card {
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+  .row {
+    flex-direction: column;
+  }
 }
